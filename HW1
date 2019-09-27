@@ -6,11 +6,11 @@
       google.charts.setOnLoadCallback(drawChart);
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses', 'Profit'],
-          ['2014', 1000, 400, 200],
-          ['2015', 1170, 460, 250],
-          ['2016', 660, 1120, 300],
-          ['2017', 1030, 540, 350]
+          ['Year', 'Sales', 'Expenses', 'Profit', 'average'],
+          ['2014', 1000, 400, 200, 533],
+          ['2015', 1170, 460, 250, 626],
+          ['2016', 660, 1120, 300, 693],
+          ['2017', 1030, 540, 350, 640]
         ]);
         var view = new google.visualization.DataView(data);
           view.setColumns([0, 1,
@@ -27,41 +27,48 @@
                        { calc: "stringify",
                          sourceColumn: 3,
                          type: "string",
-                         role: "annotation" },]);
+                         role: "annotation" },
+                        4,
+                        { calc: "stringify",
+                         sourceColumn:  4,
+                         type: "string",
+                         role: "annotation" },
+                         ]);
         var options1 = {
           title: 'Company Performance',
           vAxis: {
             title: 'Volume (USD)'
           },
+          colors: ['pink', 'gold', 'green', 'red'],
+          curveType: 'function',
           hAxis: {
             title: 'Year'
           },
           legend: {
-            position: 'bottom'
-          },
-          isStacked: 'percent',
-        };
+            position: 'bottom'},
+            seriesType: 'bars',
+            series: {3: {type: 'line'}}
+            };
         var chart1 = new google.visualization.ColumnChart(document.getElementById('chart_div1'));
         chart1.draw(view, options1);
       }
     </script>
   </head>
   <body>
-        <div id="introduction" style="max-width: 800px; font-family: Verdana, Dotum; margin: auto; padding-bottom: 30px">
-                <h1>title of this chart</h1>
-                <p>date: 2019-09-21</p>
-                <p>name: 김민식 (21500069)</p>
-                <p>Introduction: This chart is used to isStack option. <p>
-                        <span style="color:red;  font-weight: bold ">
-                                By using "isStacked" option, it is easy for users to compare performance for each category.
-                            </span>
-                </p>
-                <p>Data: The data is from google chart.
-                      https://developers.google.com/chart/interactive/docs/gallery/columnchart?hl=ko </p>
-                      (also, include the web link of the data)</p>
-                      
-                <p>Source code of this page: https://github.com/studyfirston/studyfirston.github.io/blob/master/HW1<p>
-              </div>
+    <div id="introduction" style="max-width: 800px; font-family: Verdana, Dotum; margin: auto; padding-bottom: 30px">
+      <h1>title of this chart</h1>
+      <p>date: 2019-09-21</p>
+      <p>name: 김민식 (21500069)</p>
+      <p>Introduction: This chart is added average line from professor's graph.</p>
+      <span style="color:red;  font-weight: bold ">
+            By adding an average line, it is easy for users to compare performance for each year.
+        </span>
+      <p>Data: The data is from google chart. and I added to average column.
+            https://developers.google.com/chart/interactive/docs/gallery/columnchart?hl=ko </p>
+            (also, include the web link of the data)</p>
+            
+      <p>Source code of this page: https://github.com/HandongHCI/HandongHCI.github.io/blob/master/Courses/BarChartExample.html<p>
+    </div>
     <div id="chart_div1" style="max-width: 1200px; margin: auto; width: 1200px; height: 500px;"></div>
   </body>
 </html>
