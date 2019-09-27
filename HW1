@@ -60,7 +60,7 @@
                       https://developers.google.com/chart/interactive/docs/gallery/columnchart?hl=ko </p>
                       (also, include the web link of the data)</p>
                       
-                <p>Source code of this page: https://github.com/HandongHCI/HandongHCI.github.io/blob/master/Courses/BarChartExample.html<p>
+                <p>Source code of this page: https://github.com/studyfirston/studyfirston.github.io/blob/master/HW1<p>
               </div>
     <div id="chart_div1" style="max-width: 1200px; margin: auto; width: 1200px; height: 500px;"></div>
   </body>
