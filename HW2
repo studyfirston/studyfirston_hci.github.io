@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+
+      title:{
+      text: "Quarterly Sales of Samsung Electronics "
+      },
+      axisY:{
+          includeZero : false,
+          title: "Sales"
+      }, 
+      axisX: {
+        title: "quater (unit : 100 billion won)"
+      },
+      
+       data: [
+      {
+        type: "line",
+
+        dataPoints: [
+        { x: new Date(2018, 06, 30), y: 584 },
+        { x: new Date(2018, 09, 30), y: 654, indexLabel: "highest", markerColor: "red", markerType: "triangle" },
+        { x: new Date(2018, 12, 31), y: 592 },
+        { x: new Date(2019, 03, 31), y: 523, indexLabel: "lowest", markerColor: "DarkSlateGrey", marketType: "cross" },
+        { x: new Date(2019, 06, 30), y: 561 },
+        { x: new Date(2019, 09, 30), y: 611 },
+        { x: new Date(2019, 12, 31), y: 617 },
+        { x: new Date(2020, 03, 31), y: 572 }
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  }
+  </script>
+ <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script></head>
+<body>
+    <div id="introduction" style="max-width: 800px; font-family: Verdana, Dotum; margin: auto; padding-bottom: 30px">
+        <h1>Samsung Electronics' quarterly sales data</h1>
+        <p>date: 2019-10-04</p>
+        <p>name: 김민식 (21500069)</p>
+        <p>Introduction: This graph is Samsung Electronics' quarterly sales data</p>
+        <span style="color:red;  font-weight: bold ">
+            By dotting, I've made it easier to identify the highest and lowest points, each quarterly sales
+          </span>
+        <p>Data: The data is from finance naver.  </p>
+        <p>Samsung Electronics' quarterly sales from 2018.6 ~ 2020.3(Estimaed)
+               </p>
+              (also, include the web link of the data) https://finance.naver.com/item/main.nhn?code=005930 </p>
+              
+        <p>Source code of this page: https://github.com/HandongHCI/HandongHCI.github.io/blob/master/Courses/BarChartExample.html<p>
+      </div>  
+  <div id="chartContainer" style="max-width: 800px; margin: auto; width: 800x; height: 500px;">
+  </div>  
+</body>
+</html>
