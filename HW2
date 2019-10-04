@@ -53,7 +53,7 @@
                </p>
               (also, include the web link of the data) https://finance.naver.com/item/main.nhn?code=005930 </p>
               
-        <p>Source code of this page: https://github.com/HandongHCI/HandongHCI.github.io/blob/master/Courses/BarChartExample.html<p>
+        <p><p>
       </div>  
   <div id="chartContainer" style="max-width: 800px; margin: auto; width: 800x; height: 500px;">
   </div>  
