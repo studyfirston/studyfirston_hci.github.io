@@ -85,3 +85,11 @@ p <- plot_mapbox(mode = 'scattermapbox') %>%
 # Set up API credentials: https://plot.ly/r/getting-started
 chart_link = api_create(p, filename="mapbox-lines")
 chart_link
+
+
+
+I learned how to use the 'plotly' package.
+The code is on the 'plot.ly' site.
+You can see visualized data in my plot.ly's folder.
+
+https://plot.ly/~studyfirston
