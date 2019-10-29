@@ -70,7 +70,7 @@ for(back in code_list){
   colnames(links18)[1] <- "weather"
   
   # 교통사고 데이터와 합치기 위해서 만듦. (날짜와, 지역을 합쳐서 만들기 위함)
-#  links18$sum <- paste0(links18$date, links18$name)
+##  links18$sum <- paste0(links18$date, links18$name)
     
   b <- bind_rows(b, links18)
     
