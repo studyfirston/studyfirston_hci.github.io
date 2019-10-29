@@ -1,0 +1,78 @@
+#install.packages(c("rvest","dplyr","stringr","XML","httr","curl"))
+
+library(rvest)
+library(dplyr)
+library(stringr)
+library(XML)
+library(httr)
+library(curl)
+
+front <- c("https://weather.naver.com/period/pastWetrMain.nhn?ym=201801&naverRgnCd=","https://weather.naver.com/period/pastWetrMain.nhn?ym=201802&naverRgnCd=",
+  "https://weather.naver.com/period/pastWetrMain.nhn?ym=201803&naverRgnCd=","https://weather.naver.com/period/pastWetrMain.nhn?ym=201804&naverRgnCd=",
+  "https://weather.naver.com/period/pastWetrMain.nhn?ym=201805&naverRgnCd=","https://weather.naver.com/period/pastWetrMain.nhn?ym=201806&naverRgnCd=",
+  "https://weather.naver.com/period/pastWetrMain.nhn?ym=201807&naverRgnCd=","https://weather.naver.com/period/pastWetrMain.nhn?ym=201808&naverRgnCd=",
+  "https://weather.naver.com/period/pastWetrMain.nhn?ym=201809&naverRgnCd=","https://weather.naver.com/period/pastWetrMain.nhn?ym=201810&naverRgnCd=",
+  "https://weather.naver.com/period/pastWetrMain.nhn?ym=201811&naverRgnCd=","https://weather.naver.com/period/pastWetrMain.nhn?ym=201812&naverRgnCd=")
+
+start_date <- as.Date("2018-01-01")
+#종료일 지정
+end_date <- as.Date("2018-12-31")
+
+#일 단위로 일련의 날짜 생성하기
+date_set <-seq(as.Date(start_date), as.Date(end_date), by = "day")
+
+
+b <- data.frame(weather = '맑음', date = '2018-01-01' , name = '확인용') # 데이터 합치기 위한 빈 칼럼하나 생성.
+b$date <- as.Date(b$date)
+b$name <- as.character(b$name)
+
+
+# code_list 는 각 지역의 주소코드를 받아옴. 수작업을 진행했다..
+code_list <- sprintf("%05d", scan("../data visualization project/code_list.txt"))
+code_list <- code_list[1:3]
+
+for(back in code_list){
+  urls <- NULL
+  for(i in 1:12){
+    urls[i] <- paste0(front[i], back) 
+  }
+  
+  links18 <- NULL
+  for(url in urls){
+    for(i in 1:6){
+      for(j in 1:7){
+        html18 <- read_html(url)
+        links18 <- c(links18, html18 %>% html_nodes(xpath = paste0('//*[@id="print_content"]/table[1]/tbody/tr[',i,"]/td[",j,"]/p[1]/img"))
+                     %>% html_attr('alt'))}                       
+    }}
+  
+  # 날씨 정리
+  # links18[grep('황사', links18)] <- "황사"
+  # links18[grep('눈', links18)] <- "눈"
+  # links18[grep('비', links18)] <- "비"
+  # links18[grep('천둥번개', links18)] <- "천둥번개"
+  # links18[grep('구름많음', links18)] <- "구름많음"
+  # links18[grep('구름조금', links18)] <- "구름조금"
+  # links18[grep('맑음', links18)] <- "맑음"
+  # links18[grep('흐림', links18)] <- "흐림"
+
+  # 지역이름 받기
+  web=GET(urls[1])
+  web=htmlParse(web)
+  name1 <- xpathSApply(web, '//*[@id="print_content"]/h4/span[1]', xmlValue)
+  name2 <- xpathSApply(web, '//*[@id="print_content"]/h4/span[2]', xmlValue)
+  
+  
+  # 데이터 프레임 형태로 변환 후에, 변수 추가(날짜, 지역)
+  links18 <- data.frame(links18)
+  links18$date <- date_set # 날짜변수 집어넣기.
+  links18$name <- paste(name1, name2)
+  colnames(links18)[1] <- "weather"
+  
+    
+  b <- bind_rows(b, links18)
+    
+#code_list
+  }
+
+
