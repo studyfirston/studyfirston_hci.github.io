@@ -1,4 +1,3 @@
-  
 <!DOCTYPE html>
 <html>
   <head>
@@ -11,6 +10,8 @@
         packages: ['corechart', 'line']
       });
       google.charts.setOnLoadCallback(readFile); // (1) when the javascript is read, readFile function is launched first.
+      
+      
       // (2) file is read, and the data is saved in arrayData
       // arrayData variable is sent to the function called 'draw'
       function readFile() {
@@ -22,6 +23,8 @@
           draw(arrayData)
         });
       };
+      
+      
       function draw(arrayData) {
         // (3) convert arrayData into DataTable form
         // then, the remaining process is same to the previous chart drawing assignments.
