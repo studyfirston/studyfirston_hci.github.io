@@ -14,8 +14,8 @@
               $.get(filename, function(csvString) {
                   var arrayData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScalar});
                   drawChart(arrayData);
-              }
-          }
+              });
+          };
             
           function drawChart(arrayData) {
             var data = google.visualization.arrayToDataTable(arrayData);
