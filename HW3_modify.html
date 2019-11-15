@@ -2,19 +2,23 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="jquery-csv.js"></script>
+        
         <script type="text/javascript">
           google.charts.load("current", {packages:["corechart"]});
-          google.charts.setOnLoadCallback(drawChart);
-          function drawChart() {
-            var data = google.visualization.arrayToDataTable([
-              ['Pizza Brand', 'Votes'],
-              ['Dominos Pizza',     97],
-              ['Mrs.Pizza',      70],
-              ['Pizza Hut',  53],
-              ['Pizza Alvolo', 60],
-              ['Pizza School',    23],
-              ['59 Rice Pizza', 40]
-            ]);
+          google.charts.setOnLoadCallback(readFile);
+            
+          function readFile() {
+              filename = "data2.csv";
+              $.get(filename, function(csvString) {
+                  var arrayData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScalar});
+                  drawChart(arrayData);
+              }
+          }
+            
+          function drawChart(arrayData) {
+            var data = google.visualization.arrayToDataTable(arrayData);
 
             var options = {
               title: 'ff',
