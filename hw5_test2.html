@@ -25,7 +25,7 @@
       function drawChart(arrayData) {
         var data = google.visualization.arrayToDataTable(arrayData);
         var options = {
-          zoomLevel: 8,
+          zoomLevel: 7,
           showTooltip: true,
           showInfoWindow: true,
           useMapTypeControl: true,
@@ -39,19 +39,19 @@
   </head>
   <body>
 
-    <h1>title of this chart</h1>
-    <p>date: 2019-09-21</p>
+    <h1>A famous local National University. </h1>
+    <p>date: 2019-12-03</p>
     <p>name: 김민식 (21500069)</p>
-    <p>Introduction: This chart is used to isStack option. <p>
+    <p>Introduction: This is a visualization of the map. <p>
             <span style="color:red;  font-weight: bold ">
-                    By using "isStacked" option, it is easy for users to compare performance for each category.
+                    With the app key, I visualized the map through drawmap function.
                 </span>
     </p>
-    <p>Data: The data is from google chart.
-          https://developers.google.com/chart/interactive/docs/gallery/columnchart?hl=ko </p>
-          (also, include the web link of the data)</p>
+    <p>Data: The data is from google map.
+    The latitude and longitude of famous local national universities were extracted and used from google map.  
+    </p>
+
           
-    <p>Source code of this page: https://github.com/studyfirston/studyfirston.github.io/blob/master/HW1<p>
   </div>
     <div id="chart_div" style="width: 900px; height: 500px;"></div>
   </body>
