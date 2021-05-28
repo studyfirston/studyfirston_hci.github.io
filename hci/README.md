@@ -238,8 +238,12 @@ recommended exercises.
 
 <img height="300" src="img/user1.png"> 
 
+<br></br>
+
 
 <img height="300" src="img/user2.png"> 
+
+
 
 
 
