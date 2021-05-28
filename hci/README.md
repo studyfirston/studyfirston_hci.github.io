@@ -22,15 +22,20 @@ __코로나에요!__
 >　　　___Jemin Rhee　　　　　　　　　Minsik Kim　　　　　　　　　Inseon Choi　　　　　　　　Jun Park___
   
 ------------------
-
+<br><br><br><br>
   
-  
-- test img1  
-![](img/1.jpg) 
 
-- test img2  
-![](img/2.jpg) 
+### Modeling
 
+<img/good_image.png>  
+
+
+<img/bad_image.png>  
+
+
+
+
+<br><br><br><br>
 
 
 
@@ -45,6 +50,8 @@ __코로나에요!__
 
 ## Reference
 - [LIFTR: A Virtual Personal Fitness Trainer - Powered by Computer Vision & AI](https://www.youtube.com/watch?v=tZcRYcjTwWA)
+- [Teachable Machine github](https://github.com/googlecreativelab/teachablemachine-community)
+- [Teachable Machine 생활코딩](https://opentutorials.org/course/4548/28897)
 - [Teachable Machine 공식 홈페이지](https://teachablemachine.withgoogle.com/)
 - [Teachable Machine으로 AI 헬스 트레이너 만들기](https://www.youtube.com/watch?v=9SwdGFzFb5Y)
 - [Teachable Machine으로 과일도감 만들기](https://www.youtube.com/watch?v=USQGTW34lO8)
