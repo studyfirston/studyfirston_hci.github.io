@@ -1,6 +1,22 @@
 - Add go back.
 
-### APT(AI Personal Trainer)
+# APT(AI Personal Trainer)
+
+#### Member
+
+
+<img height="100" src="img/people1.png">  
+Jemin Rhee  
+
+<img height="100" src="img/people2.png">  
+Minsik Kim  
+
+<img height="100" src="img/people3.png">  
+Inseon Choi  
+
+<img height="100" src="img/people4.png">  
+Jun Park
+
 
 - test img1  
 ![](img/1.jpg) 
