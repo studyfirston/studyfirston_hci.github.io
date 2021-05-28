@@ -2,17 +2,14 @@
 
 # APT(AI Personal Trainer)
 
-홈트레이닝을 집에서 할 수 있게 해줘요!
 
- <br>
-  
-## Background
-  
-__코로나에요!__  
-헬스장을 가기가 힘들어서, 집에서 운동을 할 수 있게 해봤어요!
+<img height="450" src="img/intro.png">
+<b><p align="center">
+WELCOME TO AI-FITNESS FRIEND  <br>
+YOUR PERSONAL AI TRAINING ASSITANT  
+</b></p>
 
-
-<br><br><br>
+<br>
 
 
 -------------------
@@ -24,6 +21,32 @@ __코로나에요!__
 ------------------
 <br><br><br><br>
   
+
+## Background
+
+### 1) Problems
+AI-fitness friend (AFF)’s goal is to help our users when they have
+difficulty doing fitness, training, or doing exercise. To be specific, we want to offer a
+personalized fitness training that can be done anytime, anywhere. It can guide our
+users full body posture information, which shows the exact current posture of their
+exercises, especially sit-ups, push-ups, squats, and lunges.
+1. Be active and healthy with AI-Fitness Friend (AFF)
+2. AI-Fitness Friend (AFF) can make home fitness highly effective and can
+provide you a great motivation
+3. AI-Fitness Friend (AFF) can give you guidance for your exercise posture and
+motions
+
+
+<br>
+### 2) Target User
+
+
+<br>
+### 3) Goal
+
+
+
+<br>
 
 ### Modeling
 
@@ -37,6 +60,18 @@ __코로나에요!__
 
 <br><br><br><br>
 
+
+
+
+
+## Conclusion
+Conclusion: 
+Throughout this semester, we want to build an application - AI-Fitness Friend -
+that can check a user's body posture. As people accelerate more into more digital
+forms of fitness guide, our application is expected to become more increasingly
+relevant. Users can use their computer or smartphone camera to
+recognize their exercise postures and movements, while this app can guide you
+through the correct postures with voice helpers. Whether your fitness goals are to build muscle, get toned or lose weight fast, Ai-Fitness Training will be the simplest way to do fitness training exercises. 
 
 
 ------------------------------
