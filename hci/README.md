@@ -105,9 +105,7 @@ __Bad Image for Modeling(RIGHT)__
 
 - 3-1) Select Language  
   
-<p align="center">
 <img height="300" src="img/p1.PNG">  
-</p>
 
 Before starting the exercise, a user can
 select the language of the 'voice' that is
@@ -116,8 +114,7 @@ used in the service. (Korean/English).
 
 - 3-2) Select Personal Trainer’s Voice
 
-  <p align="center">
-<img height="300" src="img/p2.png">  </p>
+<img height="300" src="img/p2.png">  
 
 Allows the user to select the concept
 of AI trainer voice from multiple
@@ -127,8 +124,7 @@ swearing version).
 
 - 3-3) Select Exercise Course
     
-    <p align="center">
-<img height="300" src="img/p3.PNG">  </p>
+<img height="300" src="img/p3.PNG">  
 
 Allows the user to select the exercise
 method and exercise routines.
@@ -142,8 +138,7 @@ Routine selection: exercise course selections.
 
 - 3-4) Full Body Workout
 
-<p align="center">
-<img height="300" src="img/p4.PNG">   </p>
+<img height="300" src="img/p4.PNG">   
 
 Allows the user to select the type of full body
 workouts.
@@ -161,8 +156,7 @@ HERAKLES : Level4
 - 3-5) Partial Exercise
 
   
-  <p align="center">
-<img height="300" src="img/p5.png">  </p>
+<img height="300" src="img/p5.png">  
 
 Allows the user to select the partial exercise.
 
@@ -172,8 +166,7 @@ Allows the user to select the partial exercise.
 
 - 3-6) Full Body Workout Instructions
     
-    <p align="center">
-<img height="300" src="img/p6.png">  </p>
+<img height="300" src="img/p6.png">  
 
 When the user select full body workout,
 it guides the exercise routines.
@@ -185,8 +178,7 @@ There is the ‘Start’ button on the bottom
 - 3-7) Count exercise rep
 
 
-      <p align="center">
-<img height="300" src="img/p7.png">  </p>
+<img height="300" src="img/p7.png">  
   
 AI-Fitness Friend count the number when
 the user is doing the exercises.
@@ -208,9 +200,7 @@ posture is correctly done.
 
 - 3-8) Encouraging Messages
 
-
-        <p align="center">
-<img height="300" src="img/p8.png">  </p>
+<img height="300" src="img/p8.png">  
 
 After the user reaches to the goal
 number of repetitions, it automatically
@@ -227,8 +217,7 @@ the encouraging message page.
 
 - 3-9)  Exercise Result
 
-          <p align="center">
-<img height="300" src="img/p9.png">  </p>
+<img height="300" src="img/p9.png">  
 
 It shows exercise time, number of
 repetitions, and calories burned etc
@@ -238,8 +227,7 @@ repetitions, and calories burned etc
 
 - 3-10)  Workout Recommendation
 
-            <p align="center">
-<img height="300" src="img/p10.png">  </p>
+<img height="300" src="img/p10.png"> 
 
 On the screen, a user can see list of
 recommended exercises.
