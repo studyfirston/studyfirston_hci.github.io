@@ -1,7 +1,7 @@
 ## Hi
 
 - test img1
-![](img/1.png) 
+![](img/1.jpg) 
 
 - test img2
-![](img/2.png) 
+![](img/2.jpg) 
