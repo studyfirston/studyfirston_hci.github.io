@@ -234,6 +234,17 @@ recommended exercises.
 
 <br>
 
+### 4) User test
+
+<img height="300" src="img/user1.png"> 
+
+
+<img height="300" src="img/user2.png"> 
+
+
+
+
+
 
 
 
@@ -269,3 +280,93 @@ through the correct postures with voice helpers. Whether your fitness goals are 
 - [Teachable Machine 공식 홈페이지](https://teachablemachine.withgoogle.com/)
 - [Teachable Machine으로 AI 헬스 트레이너 만들기](https://www.youtube.com/watch?v=9SwdGFzFb5Y)
 - [Teachable Machine으로 과일도감 만들기](https://www.youtube.com/watch?v=USQGTW34lO8)
+
+
+
+### Source Code for push-up (Sample)
+```
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- FAVICON-->
+    <link rel="icon" href="favicon.ico">
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+
+    <script type="text/javascript" src="/eon-chart.js"></script>
+    <script type="text/javascript" src="https://pubnub.github.io/eon/v/eon/1.0.0/eon.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://pubnub.github.io/eon/v/eon/1.0.0/eon.css"/>
+    <title>PUSH UP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div class="container mt-5">
+        <div class="frame">
+
+                <!-- 스퀏 카운터-->
+                <div class="headline">
+                    <div class="small">PUSH UP</div>Counter
+                
+                </div>
+                <div class="circle-big">
+                    <div class="text">
+                        <span id="counter">0</span><div class="small"></div>
+
+                    </div>
+                    <svg>
+                        <circle class="bg" cx="57" cy="57" r="52" />
+                        <circle class="progress" cx="57" cy="57" r="52" />
+                    </svg>
+                </div>
+
+
+                <!--스퀏 퍼센테이지-->
+                <div class="headline">
+                    <div class="small">GOOD</div>
+                
+                </div>
+                <div class="circle-big">
+                    <div class="text">
+                        <span id="probability">0</span>%<div class="small"></div>
+
+                    </div>
+                    <svg>
+                        <circle class="bg" cx="57" cy="57" r="52" />
+                        <circle class="probprog" cx="57" cy="57" r="52" />
+                    </svg>
+                </div>
+                
+...
+
+            // finally draw the poses
+            drawPose(pose);
+        }
+
+        function drawPose(pose) {
+            if (webcam.canvas) {
+                ctx.drawImage(webcam.canvas, 0, 0);
+                // draw the keypoints and skeleton
+                if (pose) {
+                    const minPartConfidence = 0.5;
+                    tmPose.drawKeypoints(pose.keypoints, minPartConfidence, ctx);
+                    tmPose.drawSkeleton(pose.keypoints, minPartConfidence, ctx);
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>
+
+
+```
