@@ -105,66 +105,144 @@ __Bad Image for Modeling(RIGHT)__
 
 - 3-1) Select Language  
   
+<p align="center">
 <img height="300" src="img/p1.PNG">  
+</p>
 
 Before starting the exercise, a user can
 select the language of the 'voice' that is
 used in the service. (Korean/English).
 
 
-- 3-2)
-<img height="300" src="img/p2.png">  
+- 3-2) Select Personal Trainer’s Voice
+
+  <p align="center">
+<img height="300" src="img/p2.png">  </p>
+
+Allows the user to select the concept
+of AI trainer voice from multiple
+concepts (e.g. sweet, scary,
+swearing version).
 
 
+- 3-3) Select Exercise Course
+    
+    <p align="center">
+<img height="300" src="img/p3.PNG">  </p>
 
-- 3-3)
-<img height="300" src="img/p3.PNG">  
+Allows the user to select the exercise
+method and exercise routines.
+Method selection: (set or individual) exercise.
+Routine selection: exercise course selections.
+
+
 
 <br>
 
 
-- 3-4)
-<img height="300" src="img/p4.PNG">  
+- 3-4) Full Body Workout
+
+<p align="center">
+<img height="300" src="img/p4.PNG">   </p>
+
+Allows the user to select the type of full body
+workouts.
+* Select exercise difficulties
+Allows the user to select the exercise intensity
+ATHENE : Level1
+AGON : Level2
+APHRODITE : Level3
+HERAKLES : Level4
+
 
 <br>
 
 
-- 3-5)
-<img height="300" src="img/p5.png">  
+- 3-5) Partial Exercise
 
-__Select Language__
-Before starting the exercise, a user can select the language of the 'voice' that is used in the service. (Korean/English).
+  
+  <p align="center">
+<img height="300" src="img/p5.png">  </p>
+
+Allows the user to select the partial exercise.
 
 
 <br>
 
 
-- 3-6)
-<img height="300" src="img/p6.png">  
+- 3-6) Full Body Workout Instructions
+    
+    <p align="center">
+<img height="300" src="img/p6.png">  </p>
+
+When the user select full body workout,
+it guides the exercise routines.
+There is the ‘Start’ button on the bottom
 
 <br>
 
 
-- 3-7)
-<img height="300" src="img/p7.png">  
+- 3-7) Count exercise rep
+
+
+      <p align="center">
+<img height="300" src="img/p7.png">  </p>
+  
+AI-Fitness Friend count the number when
+the user is doing the exercises.
+Check exercise postures
+AI-Fitness Friend ensures that the user is
+performing the selected exercise in the
+correct positions.
+Correct exercise postures
+- AI-Fitness Friend let you know that If the
+exercise posture is not going right, it sends out
+a warning tone to correct its posture.
+- Ai-fitness friend shows the numerical values
+that tells the user how much the exercise
+posture is correctly done.
+  
+  
+<br>
+
+
+- 3-8) Encouraging Messages
+
+
+        <p align="center">
+<img height="300" src="img/p8.png">  </p>
+
+After the user reaches to the goal
+number of repetitions, it automatically
+redirects to the encouraging message
+page before the result page. The user
+can select whether go back to the
+homepage or do workout more.
+*There is a background song playing in
+the encouraging message page.
+
 
 <br>
 
 
-- 3-8)
-<img height="300" src="img/p8.png">  
+- 3-9)  Exercise Result
+
+          <p align="center">
+<img height="300" src="img/p9.png">  </p>
+
+It shows exercise time, number of
+repetitions, and calories burned etc
 
 <br>
 
 
-- 3-9)
-<img height="300" src="img/p9.png">  
+- 3-10)  Workout Recommendation
 
-<br>
+            <p align="center">
+<img height="300" src="img/p10.png">  </p>
 
-
-- 3-10)
-<img height="300" src="img/p10.png">  
+On the screen, a user can see list of
+recommended exercises.
 
 <br>
 
