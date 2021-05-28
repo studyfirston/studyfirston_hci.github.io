@@ -94,6 +94,12 @@ __Bad Image for Modeling(RIGHT)__
 - 이미지를 제대로 인식하지 못한 자세들 제거
 - 모델의 정확도에 부정적인 영향
 
+<br>
+
+### 2) Demo Video
+
+
+
 
 <br><br><br><br>
 
