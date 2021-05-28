@@ -236,7 +236,23 @@ recommended exercises.
 
 ### 4) User test
 
-<img height="300" src="img/user1.png"> 
+<img height="450" src="img/user1.png"> 
+
+Result
+User’s Opinion :
+- It is good that he can see his workout posture and posture accuracy while
+working out alone at home.
+- He likes that workout assistants function like rep counters and
+encouraging voices.
+Likes :
+- It motivates me to workout since it keeps counting until I finish it.
+Dislikes :
+- It is pretty slow when its internet connection is bad. I want a solution when
+its internet connection is bad.
+Lesson Learned
+Timer: It does not have a timer function, while it counts till the number of reps
+that users set. We can add a timer function so a user can workout for a fixed time.
+
 
 <br></br>
 
@@ -244,6 +260,19 @@ recommended exercises.
 <img height="300" src="img/user2.png"> 
 
 
+Result
+User’s Opinion :
+It is fun listening to AI voiceover counting.
+Likes : 
+It has pretty decent AI workout models that perform good accuracy.
+Dislikes : 
+It is pretty slow when its internet connection is bad. I want a solution when its internet connection is bad.
+Updated Ideas:
+		Insights
+ - Mission Alarm: There is a mobile alarm app that requires a wake-up mission (e.g. solving math problems, shaking for a certain number of times) to turn off the alarm. I think I can add doing squat/jumping jacks/lunges for a certain number of times as a wake-up mission as well.
+
+
+<img height="300" src="img/user3.png"> 
 
 
 
