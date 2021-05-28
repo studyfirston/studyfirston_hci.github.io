@@ -3,18 +3,20 @@
 # APT(AI Personal Trainer)
 
 #### Member
+![](img/people_all.png)
+Jemin Rhee       Minsik Kim          Inseon Choi          Jun Park
 
 
-<img height="100" src="img/people1.png">  
+<img height="150" src="img/people1.jpg">  
 Jemin Rhee  
 
-<img height="100" src="img/people2.png">  
+<img height="150" src="img/people2.jpg">  
 Minsik Kim  
 
-<img height="100" src="img/people3.png">  
+<img height="150" src="img/people3.jpg">  
 Inseon Choi  
 
-<img height="100" src="img/people4.png">  
+<img height="150" src="img/people4.jpg">  
 Jun Park
 
 
