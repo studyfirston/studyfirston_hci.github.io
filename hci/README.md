@@ -94,9 +94,79 @@ __Bad Image for Modeling(RIGHT)__
 - 이미지를 제대로 인식하지 못한 자세들 제거
 - 모델의 정확도에 부정적인 영향
 
-<br>
+<br></br>
 
 ### 2) Demo Video
+
+
+ 
+### 3) Screens Definition
+
+
+- 3-1) Select Language  
+  
+<img height="300" src="img/p1.PNG">  
+
+Before starting the exercise, a user can
+select the language of the 'voice' that is
+used in the service. (Korean/English).
+
+
+- 3-2)
+<img height="300" src="img/p2.png">  
+
+
+
+- 3-3)
+<img height="300" src="img/p3.PNG">  
+
+<br>
+
+
+- 3-4)
+<img height="300" src="img/p4.PNG">  
+
+<br>
+
+
+- 3-5)
+<img height="300" src="img/p5.png">  
+
+__Select Language__
+Before starting the exercise, a user can select the language of the 'voice' that is used in the service. (Korean/English).
+
+
+<br>
+
+
+- 3-6)
+<img height="300" src="img/p6.png">  
+
+<br>
+
+
+- 3-7)
+<img height="300" src="img/p7.png">  
+
+<br>
+
+
+- 3-8)
+<img height="300" src="img/p8.png">  
+
+<br>
+
+
+- 3-9)
+<img height="300" src="img/p9.png">  
+
+<br>
+
+
+- 3-10)
+<img height="300" src="img/p10.png">  
+
+<br>
 
 
 
