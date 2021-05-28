@@ -22,9 +22,11 @@ YOUR PERSONAL AI TRAINING ASSITANT
 <br><br><br><br>
   
 
-## Background
+# Background
 
 ### 1) Problems
+
+<br> 
 
 __1.1) Due to the COVID-19, there are problems with fitness and outdoor exercise. It is difficult to exercise in the public indoor space and feels uncomfortable to exercise outdoors which requires contact with other people.__  
 
@@ -54,6 +56,10 @@ Consumer’s interest in Home Training is increasing, and as a result, needs for
 
 ### 2) Target User
 
+ 1) People who often exercise at home   
+2) People who cannot go to the gym due to COVID-19   
+3) People who need help because they do not know how to exercise alone (ex. exercise routine, correct posture...)   
+4) People who are bored when exercising alone at home or need fun elements (motivation)  
 
 <br>
 
@@ -74,14 +80,19 @@ motions
 
 <br>
 
-### Modeling
+# Main Contents
 
-<img/good_image.png>  
+### 1) Modeling
 
+<img height="300" src="img/model_image.PNG">  
 
-<img/bad_image.png>  
+__Good Image for Modeling(LEFT)__  
+- 이미지를 제대로 학습한 것들 
+- 300-500장으로 자세별로 학습
 
-
+__Bad Image for Modeling(RIGHT)__  
+- 이미지를 제대로 인식하지 못한 자세들 제거
+- 모델의 정확도에 부정적인 영향
 
 
 <br><br><br><br>
@@ -90,8 +101,8 @@ motions
 
 
 
-## Conclusion
-Conclusion: 
+# Conclusion
+
 Throughout this semester, we want to build an application - AI-Fitness Friend -
 that can check a user's body posture. As people accelerate more into more digital
 forms of fitness guide, our application is expected to become more increasingly
