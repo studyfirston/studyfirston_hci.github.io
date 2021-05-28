@@ -25,6 +25,40 @@ YOUR PERSONAL AI TRAINING ASSITANT
 ## Background
 
 ### 1) Problems
+
+__1.1) Due to the COVID-19, there are problems with fitness and outdoor exercise. It is difficult to exercise in the public indoor space and feels uncomfortable to exercise outdoors which requires contact with other people.__  
+
+This data is the result of <Awareness Survey on the Relationship between COVID-19 and Exercise> conducted in December 2020 by the market research company, Embrain Trend Monitor. (For 1,000 men and women aged 19 to 59)
+
+<p align="center">
+<img height="400" src="img/prob1.PNG">  
+ </P>
+  
+<p align="center"> Exercise survey results with difficulties due to COVID-19 (Embrain, 2020) </P>  
+
+As you can see from the results of the survey, it was confirmed that COVID-19 significantly increased people's fear and discomfort about indoor fitness and outdoor exercise that need to do with a partner.
+
+
+__1.2) People’s new lifestyle and effects of COVID-19 increase interest in Home Training.__
+<p align="center">
+  <img height="300" src="img/prob2.PNG">
+</p>
+<p align="center">
+Increasing the amount of social mentions and consumer counseling related to home training (Korea Consumer Agency, 2021)  
+ </p>
+Consumer’s interest in Home Training is increasing, and as a result, needs for various new Home Training services is also increasing. In this situation, we want to provide an interesting home training service through AI, voice functions, and additional interactions.
+
+
+<br>
+
+
+### 2) Target User
+
+
+<br>
+
+
+### 3) Goal
 AI-fitness friend (AFF)’s goal is to help our users when they have
 difficulty doing fitness, training, or doing exercise. To be specific, we want to offer a
 personalized fitness training that can be done anytime, anywhere. It can guide our
@@ -35,14 +69,6 @@ exercises, especially sit-ups, push-ups, squats, and lunges.
 provide you a great motivation
 3. AI-Fitness Friend (AFF) can give you guidance for your exercise posture and
 motions
-
-
-<br>
-### 2) Target User
-
-
-<br>
-### 3) Goal
 
 
 
