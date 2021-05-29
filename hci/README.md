@@ -72,18 +72,18 @@ personalized fitness training that can be done anytime, anywhere. It can guide o
 users full body posture information, which shows the exact current posture of their
 exercises, especially sit-ups, push-ups, squats, and lunges.
 1. Be active and healthy with AI-Fitness Friend (AFF)
-2. AI-Fitness Friend (AFF) can make home fitness highly effective and can
+2. AI-FITNESS FRIEND (AFF) can make home fitness highly effective and can
 provide you a great motivation
-3. AI-Fitness Friend (AFF) can give you guidance for your exercise posture and
+3. AI-FITNESS FRIEND (AFF) can give you guidance for your exercise posture and
 motions  
 
 __Our Goal__  
-Throughout this semester, we want to build an application - AI-Fitness Friend -
+Throughout this semester, we want to build an application - AI-FITNESS FRIEND -
 that can check a user's body posture. As people accelerate more into more digital
 forms of fitness guide, our application is expected to become more increasingly
 relevant. Users can use their computer or smartphone camera to
 recognize their exercise postures and movements, while this app can guide you
-through the correct postures with voice helpers. Whether your fitness goals are to build muscle, get toned or lose weight fast, Ai-Fitness Training will be the simplest way to do fitness training exercises. 
+through the correct postures with voice helpers. Whether your fitness goals are to build muscle, get toned or lose weight fast, AI-FITNESS FRIEND Training will be the simplest way to do fitness training exercises. 
 
 <br>
 
