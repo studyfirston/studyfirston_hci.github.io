@@ -286,6 +286,7 @@ User’s Opinion :
 JEMIN :    
 1) Since we imported and implemented models made using Google Teacheable Machine, it cannot detect subtle pose differences. 
 2) Since everything is hosted online server for now, it may take time if user's internet connection is not stable  
+
 Minsik :  
 1) We haven't learned all the exercises in the model yet.  
 2) The screen is small to proceed with with the cell phone, so it may not be visible.
@@ -296,6 +297,7 @@ JEMIN :
 1) In order to improve pose-detecting model, I will study PyTorch, and OpenCV (so it can detect even subtle differences).
 2) I found that pose model can be also trained with position vector values. Using position vector values can reduce training/testing time at the same time it is easy to maintain. I will try using the method later on.
 3) We are planning to release the service distributable so that everyone can enjoy it offlie as well. 
+
 Minsik :   
 1) We will conduct interviews with people who exercise a lot and look for new functions.  
 2) We will have time to add a number of features that we have planned before.  
