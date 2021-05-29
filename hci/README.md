@@ -101,6 +101,15 @@ __Bad Image for Modeling(RIGHT)__
 - If the image is not properly recognized, remove it.
 - It will negatively affect the accuracy of the model.
 
+
+<br></br>
+
+__System Modeling Design__
+
+<img height="300" src="img/system_design.PNG">  
+
+
+
 <br></br>
 
 ### 2) Demo Video  
