@@ -366,74 +366,120 @@ Jun Park :
 
 ### Source Code for push-up (Sample)
 ```
-<!DOCTYPE html>
-<html lang="ko">
+코드 설명 #01
 
-<head>
-    <meta charset="UTF-8">
-    <!-- FAVICON-->
-    <link rel="icon" href="favicon.ico">
-    <!-- Required meta tags -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+<LOADING A WORKOUT MODEL>
+// the link to your model provided by Teachable Machine export panel
+        const URL = "./models/SQUAT_MODEL/my-pose-model/";
+        let model, webcam, ctx, labelContainer, maxPredictions;
 
-    <script type="text/javascript" src="/eon-chart.js"></script>
-    <script type="text/javascript" src="https://pubnub.github.io/eon/v/eon/1.0.0/eon.js"></script>
-    <link type="text/css" rel="stylesheet" href="https://pubnub.github.io/eon/v/eon/1.0.0/eon.css"/>
-    <title>PUSH UP</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+        
+        async function init() {
+            const modelURL = URL + "model.json";
+            const metadataURL = URL + "metadata.json";
 
+            var audio = new Audio('./data/Voice/English/AreYouReady.mp3')
+            audio.play()
+            
+            // load the model and metadata
+            // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
+            // Note: the pose library adds a tmPose object to your window (window.tmPose)
+            model = await tmPose.load(modelURL, metadataURL);
+            maxPredictions = model.getTotalClasses();
 
-<body>
-    <div class="container mt-5">
-        <div class="frame">
+            // Convenience function to setup a webcam
+            const size = 500;  // WebCam Size
+            const flip = true; // whether to flip the webcam
+            webcam = new tmPose.Webcam(size, size, flip); // width, height, flip
+            await webcam.setup(); // request access to the webcam
+            await webcam.play();
+            window.requestAnimationFrame(loop);
 
-                <!-- 스퀏 카운터-->
-                <div class="headline">
-                    <div class="small">PUSH UP</div>Counter
-                
-                </div>
-                <div class="circle-big">
-                    <div class="text">
-                        <span id="counter">0</span><div class="small"></div>
-
-                    </div>
-                    <svg>
-                        <circle class="bg" cx="57" cy="57" r="52" />
-                        <circle class="progress" cx="57" cy="57" r="52" />
-                    </svg>
-                </div>
-
-
-                <!--스퀏 퍼센테이지-->
-                <div class="headline">
-                    <div class="small">GOOD</div>
-                
-                </div>
-                <div class="circle-big">
-                    <div class="text">
-                        <span id="probability">0</span>%<div class="small"></div>
-
-                    </div>
-                    <svg>
-                        <circle class="bg" cx="57" cy="57" r="52" />
-                        <circle class="probprog" cx="57" cy="57" r="52" />
-                    </svg>
-                </div>
-                
-...
-
-            // finally draw the poses
-            drawPose(pose);
+            // append/get elements to the DOM
+            const canvas = document.getElementById("canvas");
+            canvas.width = size; canvas.height = size;
+            ctx = canvas.getContext("2d");
+            labelContainer = document.getElementById("label-container");
+            for (let i = 0; i < maxPredictions; i++) { // and class labels
+                labelContainer.appendChild(document.createElement("div"));
+            }
         }
+```
 
-        function drawPose(pose) {
+```
+코드 설명 #02
+
+<PREDICTING AND COUNTING >
+// Prediction #1: run input through posenet
+            // estimatePose can take in an image, video or canvas html element
+            // GOOD POSTURE
+            if (prediction[0].probability.toFixed(2) >= 0.90) {
+                if (status == "squat") {
+                    count++
+                    var audio = new Audio('./data/Voice/한글/유학생/' + count%10 +'_유학생.mp3');
+                    audio.play();
+
+                    progress = progress-32.7
+                    if(progress <= 0) {
+                        progress = 327-32.7
+                    }
+                    $('.progress').css('stroke-dashoffset', progress);
+                    $('#counter').html(count);
+
+                    if((count >= 10) && (count % 10==0)){
+                        var audio = new Audio('./data/Voice/English/VeryGood_UK.mp3')
+                        audio.play()    
+                    }
+                }
+                status = "stand"
+            } else if (prediction[1].probability.toFixed(2) >= 0.90) {
+                status = "squat"
+            } 
+
+            // BAD POSTURE
+            if (prediction[2].probability.toFixed(2) >= 0.90) {
+                if (count % 2 == 0){
+                   if (count > 10){
+                      covar audio = new Audio('./data/Voice/한글/유학생/한글_장난치세요.mp3');
+                      audio.play();   
+                   } else {
+                      covar audio = new Audio('./data/Voice/한글/유학생/일본_장난치세요.mp3');
+                      audio.play();   
+                   }
+                } else {
+                   covar audio = new Audio('./data/Voice/한글/유학생/장난쳐_유학생.mp3');
+                   audio.play();
+                }
+            }
+
+            // QUIT
+            if (prediction[3].probability.toFixed(2) >= 0.91) {
+                await sleep(330);
+                if (prediction[3].probability.toFixed(2) >= 0.90) {
+                   if (count % 2 == 0){
+                      var audio = new Audio('./data/Voice/한글/유학생/한글_열정없구나.mp3');
+                      audio.play();
+                  } else {
+                     var audio = new Audio('./data/Voice/한글/유학생/일본_열정없구나.mp3');
+                      audio.play();
+                  }
+                }
+            }
+
+            // MUSIC_PLAY
+            if (prediction[4].probability.toFixed(2) >= 0.75) {
+               await sleep(500);
+                if (prediction[4].probability.toFixed(2) >= 0.80) {
+                   var audio = new Audio('./data/Voice/HoldOn.mp3');
+                   audio.play();
+                }
+            }
+```
+
+```
+코드 설명 #03
+<DRAWING POSE ON WEB CAM>
+function drawPose(pose) {
             if (webcam.canvas) {
                 ctx.drawImage(webcam.canvas, 0, 0);
                 // draw the keypoints and skeleton
@@ -444,11 +490,29 @@ Jun Park :
                 }
             }
         }
-
-    </script>
-</body>
-</html>
-
+        
+```
 
 ```
- 
+코드 설명 #04
+<UPDATING>
+// It lets a web page keeps update web cam frame
+        async function loop(timestamp) {
+            webcam.update(); // update the webcam frame
+            await predict();
+            window.requestAnimationFrame(loop);
+        }
+
+
+코드 설명 #05
+<TERMINATION CONDITION>
+
+// When the user reaches the number of reps that the user set,
+            // it directs to 'Result.html'
+            if(document.getElementById("MaxRepHa").value == count){
+                var audio = new Audio('./data/Voice/한글/유학생/고생했어요.mp3');
+                audio.play();
+                count++;
+                location.replace("Result.html");
+            }
+```
