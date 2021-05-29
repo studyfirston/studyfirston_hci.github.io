@@ -66,7 +66,7 @@ Consumer’s interest in Home Training is increasing, and as a result, needs for
 
 ### 3) Goal  
 __App Goal__  
-AI-fitness friend (AFF)’s goal is to help our users when they have
+AI-FITNESS FRIEND (AFF)’s goal is to help our users when they have
 difficulty doing fitness, training, or doing exercise. To be specific, we want to offer a
 personalized fitness training that can be done anytime, anywhere. It can guide our
 users full body posture information, which shows the exact current posture of their
@@ -192,11 +192,11 @@ There is the ‘Start’ button on the bottom
 
 <img height="300" src="img/p7.png">  
   
-AI-Fitness Friend counts the number when the user is doing the exercise.
-Check exercise postures. AI-Fitness Friend ensures that the user is
+AI-FITNESS FRIEND counts the number when the user is doing the exercise.
+Check exercise postures. AI-FITNESS FRIEND ensures that the user is
 performing the selected exercise in the correct position. Correct exercise postures.
-- AI-Fitness Friend lets you know that If the exercise posture is not going right, it sends out a warning tone to correct its posture.
-- Ai-fitness friend shows the numerical value that tells the user how much the exercise posture is correctly done.
+- AI-FITNESS FRIEND lets you know that If the exercise posture is not going right, it sends out a warning tone to correct its posture.
+- AI-FITNESS FRIEND shows the numerical value that tells the user how much the exercise posture is correctly done.
   
   
 <br>
@@ -242,7 +242,7 @@ recommended exercises.
 
 <img height="500" src="img/user1.png"> 
 
-Result  
+__Result__  
 User’s Opinion :
 - It is good that he can see his workout posture and posture accuracy while
 working out alone at home.
@@ -262,7 +262,7 @@ that users set. We can add a timer function so a user can workout for a fixed ti
 <img height="300" src="img/user2.png"> 
 
 
-Result
+__Result__  
 User’s Opinion :
 - It is fun listening to AI voiceover counting.
 - It has pretty decent AI workout models that perform good accuracy.
@@ -364,11 +364,11 @@ Jun Park :
 [7] 이원희, 강보윤, 김윤정, 김현경, 박정규, 박수이. (2017). Kinect 센서를 활용하는 노인 하체 근력 강화 시스템 연구. 한국정보통신학회논문지, 21(11), 2095-2102.  
 
 
-### Source Code for push-up (Sample)
+### Source Code for LOADING A WORKOUT MODEL
+
 ```
 코드 설명 #01
 
-<LOADING A WORKOUT MODEL>
 // the link to your model provided by Teachable Machine export panel
         const URL = "./models/SQUAT_MODEL/my-pose-model/";
         let model, webcam, ctx, labelContainer, maxPredictions;
@@ -406,10 +406,12 @@ Jun Park :
         }
 ```
 
+
+### Source Code for PREDICTING AND COUNTING
+
 ```
 코드 설명 #02
 
-<PREDICTING AND COUNTING >
 // Prediction #1: run input through posenet
             // estimatePose can take in an image, video or canvas html element
             // GOOD POSTURE
@@ -476,9 +478,13 @@ Jun Park :
             }
 ```
 
+
+
+### Source Code for DRAWING POSE ON WEB CAM
+  
 ```
 코드 설명 #03
-<DRAWING POSE ON WEB CAM>
+
 function drawPose(pose) {
             if (webcam.canvas) {
                 ctx.drawImage(webcam.canvas, 0, 0);
@@ -493,9 +499,13 @@ function drawPose(pose) {
         
 ```
 
+
+
+### Source Code for UPDATING
+
 ```
 코드 설명 #04
-<UPDATING>
+
 // It lets a web page keeps update web cam frame
         async function loop(timestamp) {
             webcam.update(); // update the webcam frame
@@ -505,9 +515,12 @@ function drawPose(pose) {
 
 ```
 
+
+
+### Source Code for TERMINATION CONDITION
+
 ```
 코드 설명 #05
-<TERMINATION CONDITION>
 
 // When the user reaches the number of reps that the user set,
             // it directs to 'Result.html'
