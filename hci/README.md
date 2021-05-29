@@ -64,7 +64,8 @@ Consumer’s interest in Home Training is increasing, and as a result, needs for
 <br>
 
 
-### 3) Goal
+### 3) Goal  
+__App Goal__  
 AI-fitness friend (AFF)’s goal is to help our users when they have
 difficulty doing fitness, training, or doing exercise. To be specific, we want to offer a
 personalized fitness training that can be done anytime, anywhere. It can guide our
@@ -74,9 +75,15 @@ exercises, especially sit-ups, push-ups, squats, and lunges.
 2. AI-Fitness Friend (AFF) can make home fitness highly effective and can
 provide you a great motivation
 3. AI-Fitness Friend (AFF) can give you guidance for your exercise posture and
-motions
+motions  
 
-
+__Our Goal__  
+Throughout this semester, we want to build an application - AI-Fitness Friend -
+that can check a user's body posture. As people accelerate more into more digital
+forms of fitness guide, our application is expected to become more increasingly
+relevant. Users can use their computer or smartphone camera to
+recognize their exercise postures and movements, while this app can guide you
+through the correct postures with voice helpers. Whether your fitness goals are to build muscle, get toned or lose weight fast, Ai-Fitness Training will be the simplest way to do fitness training exercises. 
 
 <br>
 
@@ -87,18 +94,18 @@ motions
 <img height="300" src="img/model_image.PNG">  
 
 __Good Image for Modeling(LEFT)__  
-- 이미지를 제대로 학습한 것들 
-- 300-500장으로 자세별로 학습
+- The model learns through accurate image recognition photography. 
+- The model learns about 300 to 500 correct data for each posture.
 
 __Bad Image for Modeling(RIGHT)__  
-- 이미지를 제대로 인식하지 못한 자세들 제거
-- 모델의 정확도에 부정적인 영향
+- If the image is not properly recognized, remove it.
+- It will negatively affect the accuracy of the model.
 
 <br></br>
 
 ### 2) Demo Video  
 
-
+<div style="position: relative; padding-bottom: 56.25%; padding-top: 25px; height: 0;"><iframe src="https://www.youtube.com/embed/16XCzTlxD2s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
  
 ### 3) Screens Definition  
 
@@ -183,12 +190,8 @@ There is the ‘Start’ button on the bottom
 AI-Fitness Friend counts the number when the user is doing the exercise.
 Check exercise postures. AI-Fitness Friend ensures that the user is
 performing the selected exercise in the correct position. Correct exercise postures.
-- AI-Fitness Friend let you know that If the
-exercise posture is not going right, it sends out
-a warning tone to correct its posture.
-- Ai-fitness friend shows the numerical values
-that tells the user how much the exercise
-posture is correctly done.
+- AI-Fitness Friend lets you know that If the exercise posture is not going right, it sends out a warning tone to correct its posture.
+- Ai-fitness friend shows the numerical value that tells the user how much the exercise posture is correctly done.
   
   
 <br>
@@ -279,12 +282,25 @@ User’s Opinion :
 
 # Conclusion
 
-Throughout this semester, we want to build an application - AI-Fitness Friend -
-that can check a user's body posture. As people accelerate more into more digital
-forms of fitness guide, our application is expected to become more increasingly
-relevant. Users can use their computer or smartphone camera to
-recognize their exercise postures and movements, while this app can guide you
-through the correct postures with voice helpers. Whether your fitness goals are to build muscle, get toned or lose weight fast, Ai-Fitness Training will be the simplest way to do fitness training exercises. 
+## Limitation
+JEMIN :    
+1) Since we imported and implemented models made using Google Teacheable Machine, it cannot detect subtle pose differences. 
+2) Since everything is hosted online server for now, it may take time if user's internet connection is not stable
+
+## Future Plan
+JEMIN :  
+1) In order to improve pose-detecting model, I will study PyTorch, and OpenCV (so it can detect even subtle differences).
+2) I found that pose model can be also trained with position vector values. Using position vector values can reduce training/testing time at the same time it is easy to maintain. I will try using the method later on.
+3) We are planning to release the service distributable so that everyone can enjoy it offlie as well. 
+
+
+
+## Review
+JEMIN :   
+Since we have only 8 weeks to implement the whole service from zero to one, it was not enough to collect, preprocess, train, test, implement, hosting, user test, and everything perfectly within the limited time. I wish I had a faster desktop during the project because I wanted to train/test, and implement faster as well. Plus, I realized that creating an app was not as difficult as I expected!
+
+
+
 
 
 ------------------------------
