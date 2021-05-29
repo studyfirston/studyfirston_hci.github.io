@@ -180,13 +180,9 @@ There is the ‘Start’ button on the bottom
 
 <img height="300" src="img/p7.png">  
   
-AI-Fitness Friend count the number when
-the user is doing the exercises.
-Check exercise postures
-AI-Fitness Friend ensures that the user is
-performing the selected exercise in the
-correct positions.
-Correct exercise postures
+AI-Fitness Friend counts the number when the user is doing the exercise.
+Check exercise postures. AI-Fitness Friend ensures that the user is
+performing the selected exercise in the correct position. Correct exercise postures.
 - AI-Fitness Friend let you know that If the
 exercise posture is not going right, it sends out
 a warning tone to correct its posture.
@@ -238,15 +234,13 @@ recommended exercises.
 
 <img height="500" src="img/user1.png"> 
 
-Result
+Result  
 User’s Opinion :
 - It is good that he can see his workout posture and posture accuracy while
 working out alone at home.
 - He likes that workout assistants function like rep counters and
 encouraging voices.
-Likes :
 - It motivates me to workout since it keeps counting until I finish it.
-Dislikes :
 - It is pretty slow when its internet connection is bad. I want a solution when
 its internet connection is bad.
 Lesson Learned
