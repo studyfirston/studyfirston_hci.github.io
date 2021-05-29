@@ -503,7 +503,9 @@ function drawPose(pose) {
             window.requestAnimationFrame(loop);
         }
 
+```
 
+```
 코드 설명 #05
 <TERMINATION CONDITION>
 
