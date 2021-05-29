@@ -288,17 +288,24 @@ User’s Opinion :
 # Conclusion
 
 ## Limitation
-JEMIN :    
+Jemin Rhee:    
 1) Since we imported and implemented models made using Google Teacheable Machine, it cannot detect subtle pose differences. 
 2) Since everything is hosted online server for now, it may take time if user's internet connection is not stable  
 
-Minsik :  
+Minsik Kim:  
 1) We haven't learned all the exercises in the model yet.  
 2) The screen is small to proceed with with the cell phone, so it may not be visible.
+   
+Inseon Choi :  
+- At this point, only two separate exercises (squats, jumping jacks) have been implemented.  
+- In the final model with additional functions, I feel the recognition accuracy is a bit lower. (Compared to the model that only learned exercise posture recognition)  
+   
+Jun Park :  
+- Due to time constraints, we could not implement more exercises postures. It was time consuming when we had to remove the dirty data because it could not detect our poses.  
 
 
 ## Future Plan
-JEMIN :  
+Jemin Rhee:  
 1) In order to improve pose-detecting model, I will study PyTorch, and OpenCV (so it can detect even subtle differences).
 2) I found that pose model can be also trained with position vector values. Using position vector values can reduce training/testing time at the same time it is easy to maintain. I will try using the method later on.
 3) We are planning to release the service distributable so that everyone can enjoy it offlie as well. 
@@ -307,14 +314,27 @@ Minsik :
 1) We will conduct interviews with people who exercise a lot and look for new functions.  
 2) We will have time to add a number of features that we have planned before.  
 
+Inseon Choi :  
+- I tried it outdoors during User Research, and it was positive than I expected. It would be good to plan for use in places. (not only home training but also gym, park etc.)  
+
+
+Jun PARK :
+- For our future studies, we plan on experimenting with our ai-fitness friend app so that we have different types of interaction with the users in different places and they can give us more feedbacks. 
+
 
 ## Review
-JEMIN :   
-Since we have only 8 weeks to implement the whole service from zero to one, it was not enough to collect, preprocess, train, test, implement, hosting, user test, and everything perfectly within the limited time. I wish I had a faster desktop during the project because I wanted to train/test, and implement faster as well. Plus, I realized that creating an app was not as difficult as I expected!  
-Minsik :  
-I think it was easy for us to create because we used a function called Teachable Machine. However, it is difficult to accomplish what we want in details.It was a simple prototype now, but I felt that when I had to make a product like this, I had to embody it directly.  
+Jemin Rhee :   
+- Since we have only 8 weeks to implement the whole service from zero to one, it was not enough to collect, preprocess, train, test, implement, hosting, user test, and everything perfectly within the limited time. I wish I had a faster desktop during the project because I wanted to train/test, and implement faster as well. Plus, I realized that creating an app was not as difficult as I expected!  
+
+Minsik Kim:  
+- I think it was easy for us to create because we used a function called Teachable Machine. However, it is difficult to accomplish what we want in details.It was a simple prototype now, but I felt that when I had to make a product like this, I had to embody it directly.  
+
+Inseon Choi :  
+- It was helpful for me to have various experiences such as setting targets, implementing services, and considering HCI elements in a short time. I expect that this experience will remain as an important learning when creating services in the future.  
 
 
+Jun Park :  
+- Overall, I had a joy of making this app with my team members. Everything went well smoothly than I expected.  Through this course, I learnt a valuable lesson for me creating this kind of services in the future  
 
 
 ------------------------------
