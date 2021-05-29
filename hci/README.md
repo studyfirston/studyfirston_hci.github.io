@@ -56,7 +56,7 @@ Consumer’s interest in Home Training is increasing, and as a result, needs for
 
 ### 2) Target User
 
- 1) People who often exercise at home   
+1) People who often exercise at home   
 2) People who cannot go to the gym due to COVID-19   
 3) People who need help because they do not know how to exercise alone (ex. exercise routine, correct posture...)   
 4) People who are bored when exercising alone at home or need fun elements (motivation)  
@@ -285,20 +285,27 @@ User’s Opinion :
 ## Limitation
 JEMIN :    
 1) Since we imported and implemented models made using Google Teacheable Machine, it cannot detect subtle pose differences. 
-2) Since everything is hosted online server for now, it may take time if user's internet connection is not stable
+2) Since everything is hosted online server for now, it may take time if user's internet connection is not stable  
+Minsik :  
+1) We haven't learned all the exercises in the model yet.  
+2) The screen is small to proceed with with the cell phone, so it may not be visible.
+
 
 ## Future Plan
 JEMIN :  
 1) In order to improve pose-detecting model, I will study PyTorch, and OpenCV (so it can detect even subtle differences).
 2) I found that pose model can be also trained with position vector values. Using position vector values can reduce training/testing time at the same time it is easy to maintain. I will try using the method later on.
 3) We are planning to release the service distributable so that everyone can enjoy it offlie as well. 
-
+Minsik :   
+1) We will conduct interviews with people who exercise a lot and look for new functions.  
+2) We will have time to add a number of features that we have planned before.  
 
 
 ## Review
 JEMIN :   
-Since we have only 8 weeks to implement the whole service from zero to one, it was not enough to collect, preprocess, train, test, implement, hosting, user test, and everything perfectly within the limited time. I wish I had a faster desktop during the project because I wanted to train/test, and implement faster as well. Plus, I realized that creating an app was not as difficult as I expected!
-
+Since we have only 8 weeks to implement the whole service from zero to one, it was not enough to collect, preprocess, train, test, implement, hosting, user test, and everything perfectly within the limited time. I wish I had a faster desktop during the project because I wanted to train/test, and implement faster as well. Plus, I realized that creating an app was not as difficult as I expected!  
+Minsik :  
+I think it was easy for us to create because we used a function called Teachable Machine. However, it is difficult to accomplish what we want in details.It was a simple prototype now, but I felt that when I had to make a product like this, I had to embody it directly.  
 
 
 
